@@ -63,13 +63,19 @@ E.G., I don't have a monitor plugged into my [Octopi](https://octoprint.org/down
 
 3) Unless you're using the Windows executable, Python3 is required, with additional updates/packages. <br/><br/>
 **Octopi Installation:** (some unnecessary commands included to help noobs) <br/>
-sudo apt-get install python3-serial <br/>
-sudo apt-get install python3-scipy <br/>
-sudo apt-get install python-serial <br/>
-git clone https://github.com/PurpleHullPeas/MPMD-AutoBedLevel-Cal.git <br/>
-cd MPMD-AutoBedLevel-Cal <br/>
-git fetch <br/>
-git pull <br/><br/>
+
+
+```bash
+sudo apt-get update
+sudo apt-get install python3-serial -y
+sudo apt-get install python3-scipy -y
+sudo apt-get install python-serial -y
+git clone https://github.com/PurpleHullPeas/MPMD-AutoBedLevel-Cal.git
+cd MPMD-AutoBedLevel-Cal
+git fetch
+git pull
+```
+
 **Windows Installation:** <br/>
 I recently released a command-line executable that can be used instead of the python script, as well as a batch file to make running it more straightforward: auto_cal_p5_v0.bat and auto_cal_p5_v0.exe (you will need both files in the same directory). <br/>
 The [Visual C++ Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=48145) may be required whether you use the executable or the Python script. <br/>
